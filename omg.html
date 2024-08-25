@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Typing Text</title>
+    <style>
+        #typing-text {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div id="typing-text"></div>
+
+    <script>
+        const text = "Please enter your email:";
+        const typingSpeed = 100; // milliseconds per character
+
+        function typeText() {
+            const typingDiv = document.getElementById("typing-text");
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    typingDiv.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, typingSpeed);
+                }
+            }
+            
+            type();
+        }
+
+        window.onload = typeText;
+    </script>
+</body>
+</html>
