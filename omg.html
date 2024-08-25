@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Typing Text</title>
+    <title>Auto Typing Text with Form</title>
     <style>
         #typing-text {
             font-size: 24px;
@@ -12,11 +12,28 @@
             overflow: hidden;
             border-right: 2px solid;
             width: fit-content;
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
     <div id="typing-text"></div>
+
+    <form id="form" onsubmit="return false;">
+        <input type="email" id="userEmail" placeholder="Enter your email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>
+        Please remember to use your email!
+    </p>
 
     <script>
         const text = "Please enter your email:";
@@ -41,17 +58,3 @@
     </script>
 </body>
 </html>
-
-<!DOCTYPE html>
-
-</h1>
-
-<form id="form" onsubmit="return false;">
-  <input type="email" id="userEmail"><br><br>
-  <input type="submit">
-</form>
-
-<p1>
-  Please remember to use your email!
-</p1>
-
