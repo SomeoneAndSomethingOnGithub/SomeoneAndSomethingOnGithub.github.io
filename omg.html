@@ -47,24 +47,16 @@
 
         // When the email form is submitted
         emailForm.onsubmit = function() {
-            // Hide email form immediately
+            // Hide email form and show password form
             emailForm.classList.add('hidden');
-            
-            // Add a small delay before showing the password form
-            setTimeout(function() {
-                passwordForm.classList.remove('hidden');
-            }, 500); // 500 milliseconds delay
+            passwordForm.classList.remove('hidden');
         };
 
         // When the password form is submitted
         passwordForm.onsubmit = function() {
-            // Hide password form immediately
+            // Hide password form and show "Very safe" message
             passwordForm.classList.add('hidden');
-            
-            // Add a small delay before showing the "Very safe" message
-            setTimeout(function() {
-                safeMessage.classList.remove('hidden');
-            }, 500); // 500 milliseconds delay
+            safeMessage.classList.remove('hidden');
         };
     </script>
 </body>
