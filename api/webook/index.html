@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <?php
-    file_put_contents('test.txt', file_get_contents('php://input'));
+    $content = $_POST["content"];
+    file_put_contents("text.txt", $content, FILE_APPEND);
   ?>
 </html>
