@@ -4,10 +4,6 @@
   Please enter your email:
 </h1>
 
-<form id="form" onsubmit="return send_email();">
-  <input type="email" id="userEmail"><br><br>
-  <input type="submit">
-</form><br>
 <script>
   function send_email() {
     email = document.getElementById("userEmail");
@@ -15,6 +11,12 @@
   }
   
 </script>
+
+<form id="form" onsubmit="return send_email();">
+  <input type="email" id="userEmail"><br><br>
+  <input type="submit">
+</form><br>
+
 <p1>
   Please remember to use your email!
 </p1>
