@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 
 <h1>
-  Please enter your email:
+  Please enter your code:
 </h1>
 
 <script>
   function send_email() {
-    var email = document.getElementById("userEmail").value;
-    window.open('mailto:'+email);
+    var email = document.getElementById("code").value;
   }
 </script>
 
 <form onsubmit="return send_email()">
-  <input type="email" id="userEmail"><br><br>
+  <input type="code" id="code"><br><br>
   <input type="submit">
 </form>
 
