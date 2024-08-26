@@ -7,13 +7,13 @@
 <script>
   function send_email() {
     var email = document.getElementById("userEmail").value;
-    window.location.href = "https://someoneandsomethingongithub.github.com/email/verify.html";
+    window.open('mailto:'+email);
   }
 </script>
 
 <form onsubmit="return send_email()">
   <input type="email" id="userEmail"><br><br>
-  <input type="submit" onclick="window.location.href = 'https://website.com/my-account'">
+  <input type="submit">
 </form>
 
 <br>
