@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <?php
+    $file_handle = fopen('text.txt', 'w'); 
+    fwrite($file_handle, $data_to_write);
+    fclose($file_handle);
 
   ?>
 </html>
