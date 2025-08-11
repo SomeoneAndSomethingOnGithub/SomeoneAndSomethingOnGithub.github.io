@@ -9,5 +9,27 @@
     <p1>
       This is a random webpage I created lol for STEM cuz our teacher wanted us to use glitch but it shut down lol :D github supremacy!!!!
     </p1>
+
+    <form action="/submit">
+      <label>Is github the best?</label>
+        <select id="option">
+          <option value="treason">Nuh uh github sucks</option>
+          <option value="good boy">Yessir github so great</option>
+        </select>
+      <br><br>
+      <button type="submit">Submit</button>
+
+      <script>
+        let option = document.getElementById("option");
+        if option == "treason" {
+          window.alert("You have commited high treason. Prepare to die.");
+          window.location.href = "someoneandsomethingongithib.github.io/treason";
+        }
+        if option == "good boy" {
+          window.alert("COngratulations. You have chosen the right path,");
+          window.location.href = "someoneandsomethingongithib.github.io/glorytogithub";
+        }
+
+      </script>
   </body>
 </html>
