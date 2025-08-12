@@ -13,24 +13,9 @@
 
     <form action="/submit">
       <label>Is github the best?</label>
-        <select id="option">
-          <option value="treason">Nuh uh github sucks</option>
-          <option value="good boy">Yessir github so great</option>
+        <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+          <option value="https://someoneandsomesomethingongithub.github.io/treason" selected>Github sucks >:(((((( grrrrrrrr</option>
+          <option value="https://someoneandsomesomethingongithub.github.io/glorytogithub">Github da best :)))</option>
         </select>
-      <br><br>
-      <button type="submit">Submit</button>
-
-      <script>
-        let option = document.getElementById("option");
-        if option == "treason" {
-          window.alert("You have commited high treason. Prepare to die.");
-          window.location.href = "someoneandsomethingongithib.github.io/treason";
-        }
-        if option == "good boy" {
-          window.alert("COngratulations. You have chosen the right path,");
-          window.location.href = "someoneandsomethingongithib.github.io/glorytogithub";
-        }
-
-      </script>
   </body>
 </html>
