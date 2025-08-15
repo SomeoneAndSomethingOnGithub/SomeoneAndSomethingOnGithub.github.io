@@ -8,6 +8,9 @@ h1 {
 
 a {
   background-color: #04AA6D;
+  font-size: 16px;
+  padding: 16px;
+  color: white;
 }
 .dropbtn {
   background-color: #04AA6D;
