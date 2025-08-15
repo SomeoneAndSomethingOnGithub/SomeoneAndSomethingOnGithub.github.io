@@ -6,6 +6,9 @@ h1 {
   background-color: blue;
 }
 
+a {
+  background-color: #04AA6D;
+}
 .dropbtn {
   background-color: #04AA6D;
   color: white;
