@@ -6,15 +6,7 @@ h1 {
   background-color: blue;
 }
 
-a {
-  background-color: #04AA6D;
-  font-size: 16px;
-  padding: 16px;
-  color: white;
-}
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
