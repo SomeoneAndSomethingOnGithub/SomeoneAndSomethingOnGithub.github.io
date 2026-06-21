@@ -1,0 +1,98 @@
+p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*
+I copied this flexbox off off the internet https://www.w3schools.com/csS/css3_flexbox.asp
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: darkblue;
+  padding: 5px;
+}
+
+.container a {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a { color: red; }
+a:visited { text-decoration: none; color: red; }
+a:hover { text-decoration: none; color: blue; }
+a:focus { text-decoration: none; color: yellow; }
+a:hover, a:active { text-decoration: none; color: black; }
+
+.question, .wrongquestion, .rightquestion {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.question {
+  background-color: lightyellow;
+  border: 2px solid black;
+}
+
+.rightquestion {
+  background-color: lightyellow;
+  border: 5px solid green;
+}
+
+.wrongquestion {
+  background-color: lightyellow;
+  border: 5px solid red;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: DodgerBlue;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.hints{
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  background-color: lightyellow;
+  border: 2px solid black;
+}

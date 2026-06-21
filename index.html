@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--LATEX-->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Math Quiz</title>
+    <link rel="icon" href="Assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">Questions</a>
+        <a href="hints.html">Hints</a>
+    </div>
+    
+    <br>
+    <h1>My Math Quiz</h1>
+    <div class="question" id="question1">
+        <p>Given a function \(f:\mathbb{R}\to\mathbb{R}\) such that it satisfies \[f(x+y)=f(x)+f(y), \quad xf(x)=f(x^2)\]</p>
+        <label for="q1">Suppose the function can be expressed as \(f(x)=xc+d\), where \(c,d\) are arbitrary constants. Find \(c+d\):</label>
+        <br><br>
+        <input id="q1" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+
+    <div class="question" id="question2">
+        <p>Given \(a,b,c\in\mathbb{Z}^{+}\) such that it satisfies \[a^2+b+c=abc\]</p>
+        <label for="q2">Find the sum of all possible values of \(a+b+c\):</label>
+        <br><br>
+        <input id="q2" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+
+    <div class="question" id="question3">
+        <p>Let \(ABC\) be a triangle with \(BC>AC>AB\) and let \(D\) be a point in the interior of segment \(BC\). Let \(E\) be a point on the circumcircle of \(\triangle ABC\) such that \(A,E\) lie on the opposite sides of line \(BC\) and \(\angle BAD = \angle EAC\). Let \(I, I_B,I_C,J_B,J_C\) be the incentres of triangles \(ABC,ABD,ADC,ABE,AEC\) respectively.</p>
+        <label for="q3">Given \(AI, I_BI_C, J_BJ_C\) concur, find \(\angle I_BJ_BJ_C + \angle I_BI_CJ_C\):</label>
+        <br><br>
+        <input id="q3" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+
+    <div class="question" id="question4">
+        <p>Find the remainder when \(3^{2026}\) is divided by \(73\).</p>
+        <label for="q4">Answer:</label>
+        <br><br>
+        <input id="q4" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+
+    <div class="question" id="question5">
+        <p>Let \(n\) be the smallest positive integer such that \(n!\) is divisible by \(10^{100}\).</p>
+        <label for="q5">Find the value of \(n\):</label>
+        <br><br>
+        <input id="q5" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+
+    <div class="question" id="question6">
+        <p>Find the greatest common divisor of the two large integers \(A\) and \(B\), where: \[A = 2^{2026} + 1\] \[B = 2^{2018} + 1\]</p>
+        <label for="q6">Find \(\gcd(A, B)\):</label>
+        <br><br>
+        <input id="q6" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+
+    <div class="question" id="question7">
+        <p>Find the smallest positive integer \(x\) that satisfies the following simultaneous congruences: \[x \equiv 2 \pmod 5\] \[x \equiv 4 \pmod 7\] \[x \equiv 6 \pmod 9\]</p>
+        <label for="q7">Value of \(x\):</label>
+        <br><br>
+        <input id="q7" spellcheck="false" autocomplete="off" aria-autocomplete="none">
+    </div>
+
+    <br><br>
+    
+    <div style="text-align: center;">
+        <button onclick="checkAnswers()">Submit Test</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
